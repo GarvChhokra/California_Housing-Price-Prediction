@@ -1,0 +1,50 @@
+<html>
+<head>
+<title> Flask Demo   </title>
+</head>
+<body>
+<center>
+<h1 align="center"> Machine Learning Model Deployment</h1>
+<br>
+<form align="justify" action="/result" method="post" style="border:black;width:500px;height:45sp0px;padding:20px; border-width:2px; border-style:solid;">
+<label>Longitude:  </label>
+-130<input id = "longi" type = "range" min="-130" max ="-112" step ="0.1"
+                   name ="longi" oninput="longi_disp.value=longi.value">-112
+  Value:  <output id ="longi_disp"> </output>
+<br><br>
+<label>Latitude:  </label>
+30<input id = "lati" type = "range" min="30" max ="50" step ="1"
+                   name ="lati" oninput="lati_disp.value=lati.value">50
+   Value: <output id ="lati_disp"> </output>
+<br><br>
+<input type = "text", name ="housing_median_age", placeholder= "housing_median_age", required="required"/> (1-52)
+<br><br>
+<input type = "text", name ="total_rooms", placeholder= "total_rooms", required="required"/> (2-39320)
+<br><br>
+<input type = "text", name ="total_bedrooms", placeholder= "total_bedrooms", required="required"/> (1-6445)
+<br><br>
+<input type = "text", name ="population", placeholder= "population", required="required"/> (3-35682)
+<br><br>
+<input type = "text", name ="households", placeholder= "households", required="required"/> (1-6082)
+<br><br>
+<input type = "text", name ="median_income", placeholder= "median_income", required="required"/> (0.49-15.0)
+<br><br>
+<p>Ocean Proximity </p>
+<select name = "ocean_proximity">
+<option value = "INLAND"> INLAND</option>
+<option value = "NEAR OCEAN"> NEAR OCEAN</option>
+<option  value = "<1H OCEAN"> &lt 1H OCEAN</option>
+<option value = "NEAR BAY"> NEAR BAY</option>
+<option value = "ISLAND"> ISLAND</option>
+</select>
+<br><br>
+<button type ="submit">PREDICT</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="reset" value="RESET" >
+</form>
+</center>
+</body>
+<footer>
+	<p>Created by Merlin James. &copy; 2023</p>
+</footer>
+</html>
